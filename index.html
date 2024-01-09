@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>form{text-align: center;}
+    button{height: 30px; width: 100px;}
+    </style>
+</head>
+<body>
+    <form method="post"> 
+        <h2>Добавление нового продукта</h2>
+        <label><p>Название продукта:</p>
+            <input type="text" name="produkt" placeholder="Apple">
+        </label>
+        <label><p>Цена:</p>
+            <input type="number" min="0" name="price" placeholder="100">
+        </label>  
+        <label><p>Количевство:</p>
+            <input type="number" min="0" max="10" name="count"> 
+        </label>
+        <label>
+            <p>Описание:</p>
+            <textarea name="description" placeholder="Раскажите про товар "></textarea>
+        </label>
+        <label>
+            <p>Категория:</p>
+            <select name="category">
+                <option value="sport">Спорт</option>
+                <option value="home">Дача</option>
+                <option value="hobby">Хобби</option>
+                <option value="house">Дом</option>
+                <option value="gift">Подарки</option>
+
+            </select>
+        </label>
+        <p></p>
+        <button>Отправить</button>
+    </form>
+    <form >
+        <p></p>
+        <h2>Авторизация</h2>
+        <label><p>Логин:</p>
+            <input type="text" name="Login" placeholder="Ваш логин">
+        </label>
+        <label><p>Пароль:</p>
+            <input type="password" name="password" placeholder="Ваш Пароль">
+        </label>
+        <p></p>
+        <button>Войти</button>
+    </form>
+    <p></p>
+    
+    <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <h2>Отправка форми</h2>
+        <label><p>Title</p><input type="text" name="title"></label>
+        <label><p>Body</p><input type="text" name="body"></label>
+        <label><p>UserId</p><input type="number" name="userId"></label>
+    <button>Send</button>
+</form>
+</body>
+</html>
